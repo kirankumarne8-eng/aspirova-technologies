@@ -2878,20 +2878,110 @@ footer ul li a:hover {
 }
 
 
-/* Uploaded MK logo used in the navigation */
-.logo-mark-image {
+
+
+/* ===== PROFESSIONAL BRAND LOCKUP ===== */
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 360px;
+  text-decoration: none;
+}
+
+.brand-mark-wrap {
   width: 54px;
-  height: 48px;
+  height: 54px;
+  border-radius: 13px;
+  background: #0A1628;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 54px;
+  box-shadow: 0 6px 18px rgba(10, 22, 40, 0.16);
+  overflow: hidden;
+}
+
+.logo-mark-image {
+  width: 48px;
+  height: 44px;
   object-fit: contain;
   display: block;
-  flex-shrink: 0;
-  background: #fff;
-  border-radius: 8px;
+}
+
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+  min-width: 0;
+}
+
+.brand-name {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(20px, 1.65vw, 27px);
+  font-weight: 800;
+  letter-spacing: -0.7px;
+  color: #0A1628;
+  white-space: nowrap;
+}
+
+.brand-tagline {
+  margin-top: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.55px;
+  text-transform: uppercase;
+  color: #7181A1;
+  white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+  .nav-logo {
+    min-width: 300px;
+  }
+  .brand-name {
+    font-size: 21px;
+  }
+  .brand-tagline {
+    font-size: 8px;
+    letter-spacing: 1.2px;
+  }
 }
 
 @media (max-width: 768px) {
+  .nav-logo {
+    min-width: 0;
+    gap: 9px;
+  }
+  .brand-mark-wrap {
+    width: 46px;
+    height: 46px;
+    flex-basis: 46px;
+    border-radius: 11px;
+  }
   .logo-mark-image {
-    width: 48px;
-    height: 43px;
+    width: 41px;
+    height: 38px;
+  }
+  .brand-name {
+    font-size: 17px;
+    letter-spacing: -0.35px;
+  }
+  .brand-tagline {
+    font-size: 6.7px;
+    letter-spacing: 0.82px;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 430px) {
+  .brand-name {
+    font-size: 15px;
+  }
+  .brand-tagline {
+    font-size: 5.8px;
+    letter-spacing: 0.55px;
   }
 }
