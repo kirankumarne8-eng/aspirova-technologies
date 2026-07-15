@@ -2880,31 +2880,34 @@ footer ul li a:hover {
 
 
 
-/* ===== PROFESSIONAL BRAND LOCKUP ===== */
+
+
+/* ===== REFINED BRAND LOCKUP ===== */
 .nav-logo {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  min-width: 360px;
+  gap: 11px;
+  min-width: 350px;
   text-decoration: none;
 }
 
 .brand-mark-wrap {
-  width: 54px;
-  height: 54px;
-  border-radius: 13px;
-  background: #0A1628;
+  width: 56px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 54px;
-  box-shadow: 0 6px 18px rgba(10, 22, 40, 0.16);
-  overflow: hidden;
+  flex: 0 0 56px;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
 }
 
 .logo-mark-image {
-  width: 48px;
-  height: 44px;
+  width: 56px;
+  height: 50px;
   object-fit: contain;
   display: block;
 }
@@ -2919,69 +2922,105 @@ footer ul li a:hover {
 
 .brand-name {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(20px, 1.65vw, 27px);
+  font-size: clamp(20px, 1.55vw, 25px);
   font-weight: 800;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.65px;
   color: #0A1628;
   white-space: nowrap;
 }
 
 .brand-tagline {
+  display: block;
   margin-top: 5px;
+  padding: 0;
+  background: transparent;
+  border: 0;
   font-family: 'Inter', sans-serif;
-  font-size: 9px;
+  font-size: 8.5px;
   font-weight: 700;
-  letter-spacing: 1.55px;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
-  color: #7181A1;
+  color: #8290AC;
   white-space: nowrap;
+}
+
+/* Actual logo inside the dark footer */
+.footer-v2-logo {
+  width: 62px;
+  height: 62px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid rgba(255,255,255,0.75);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.footer-logo-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 @media (max-width: 1180px) {
   .nav-logo {
-    min-width: 300px;
+    min-width: 292px;
   }
+
   .brand-name {
-    font-size: 21px;
+    font-size: 20px;
   }
+
   .brand-tagline {
-    font-size: 8px;
-    letter-spacing: 1.2px;
+    font-size: 7.5px;
+    letter-spacing: 1px;
   }
 }
 
 @media (max-width: 768px) {
   .nav-logo {
     min-width: 0;
-    gap: 9px;
+    gap: 8px;
   }
+
   .brand-mark-wrap {
-    width: 46px;
-    height: 46px;
-    flex-basis: 46px;
-    border-radius: 11px;
+    width: 45px;
+    height: 41px;
+    flex-basis: 45px;
   }
+
   .logo-mark-image {
-    width: 41px;
-    height: 38px;
+    width: 45px;
+    height: 41px;
   }
+
   .brand-name {
-    font-size: 17px;
-    letter-spacing: -0.35px;
+    font-size: 16px;
+    letter-spacing: -0.3px;
   }
+
   .brand-tagline {
-    font-size: 6.7px;
-    letter-spacing: 0.82px;
+    font-size: 5.8px;
+    letter-spacing: 0.6px;
     margin-top: 4px;
+  }
+
+  .footer-v2-logo {
+    width: 56px;
+    height: 56px;
   }
 }
 
 @media (max-width: 430px) {
   .brand-name {
-    font-size: 15px;
+    font-size: 14px;
   }
+
   .brand-tagline {
-    font-size: 5.8px;
-    letter-spacing: 0.55px;
+    display: none;
   }
 }
