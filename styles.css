@@ -1,4 +1,4 @@
-﻿*, *::before, *::after {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -143,7 +143,7 @@ nav {
 }
 
 .nav-dropdown > a::after {
-  content: 'â–¾';
+  content: '▼';
   font-size: 11px;
 }
 
@@ -675,7 +675,7 @@ section {
 }
 
 .prog-features li::before {
-  content: 'âœ“';
+  content: '✓';
   color: var(--accent);
   font-weight: 700;
   flex-shrink: 0;
@@ -1849,7 +1849,7 @@ footer ul li a:hover {
 }
 
 .side-list li::before {
-  content: 'âœ“';
+  content: '✓';
   color: var(--accent);
   font-weight: 700;
   flex-shrink: 0;
@@ -2874,5 +2874,24 @@ footer ul li a:hover {
   }
   .whatsapp-float-text {
     display: none;
+  }
+}
+
+
+/* Uploaded MK logo used in the navigation */
+.logo-mark-image {
+  width: 54px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .logo-mark-image {
+    width: 48px;
+    height: 43px;
   }
 }

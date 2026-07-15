@@ -1,21 +1,34 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aspirova Technologies Bengaluru | Training, Internships & Placements</title>
+
+  <!-- Canonical host redirect: www -> root domain -->
+  <script>
+    if (window.location.hostname === 'www.aspirovatechnologies.com') {
+      window.location.replace(
+        'https://aspirovatechnologies.com' +
+        window.location.pathname +
+        window.location.search +
+        window.location.hash
+      );
+    }
+  </script>
+
   <meta name="description" content="Aspirova Technologies in Bengaluru provides Java, Python, Embedded Systems, MATLAB, software testing and automotive training, internships, final-year projects and placement assistance.">
 
   <!-- Google / Robots -->
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.aspirovatechnologies.com/">
+  <link rel="canonical" href="https://aspirovatechnologies.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Aspirova Technologies Bengaluru">
   <meta property="og:description" content="Engineering training, internships, final-year projects and placement assistance in Bengaluru.">
-  <meta property="og:url" content="https://www.aspirovatechnologies.com/">
-  <meta property="og:image" content="https://www.aspirovatechnologies.com/aspirova-logo.png">
+  <meta property="og:url" content="https://aspirovatechnologies.com/">
+  <meta property="og:image" content="https://aspirovatechnologies.com/aspirova-logo.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -31,8 +44,8 @@
     "@type": "EducationalOrganization",
     "name": "Aspirova Technologies",
     "alternateName": "Turning Aspirations into Careers",
-    "url": "https://www.aspirovatechnologies.com/",
-    "logo": "https://www.aspirovatechnologies.com/aspirova-logo.png",
+    "url": "https://aspirovatechnologies.com/",
+    "logo": "https://aspirovatechnologies.com/aspirova-logo.png",
     "telephone": "+91-6361792249",
     "email": "hr@aspirovatechnologies.com",
     "address": {
@@ -64,7 +77,7 @@
   <!-- ===== NAVIGATION BAR ===== -->
   <nav id="mainNav">
     <a href="javascript:void(0)" onclick="showPage('home')" class="nav-logo" id="navLogo">
-      <div class="logo-mark">MK</div>
+      <img src="aspirova-logo.png" alt="MK Aspirova Technologies logo" class="logo-mark-image">
       <div class="logo-text">
         Aspirova Technologies
         <div class="logo-sub">Turning Aspirations into Careers</div>
@@ -156,9 +169,9 @@
       <div class="hero-inner">
         <div class="hero-content">
           <div class="welcome-badge">
-          <span class="welcome-lang" id="welcomeLang">ನಮಸ್ಕಾರ,</span>
-          <span id="welcomeRest">Aspirova Technologies ಗೆ ಸ್ವಾಗತ</span> 
-</div>
+            <span class="welcome-lang" id="welcomeLang">ನಮಸ್ಕಾರ,</span>
+            <span id="welcomeRest">Aspirova Technologies ಗೆ ಸ್ವಾಗತ</span>
+          </div>
           <h1>Career Solutions<br>Tailored to<br>Your Success</h1>
           <p class="hero-sub">Empowering engineering and diploma students across all streams with premium internships, final year project support, career-oriented job guidance, and direct job opportunities.</p>
           <div class="hero-btns">
@@ -249,7 +262,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5.5 5.5 0 0 0 12.5 2.5C9.2 2.5 6.5 5.2 6.5 8.5c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"></path><line x1="9" y1="18" x2="15" y2="18"></line><line x1="10" y1="22" x2="14" y2="22"></line></svg>
         </span>
         <blockquote>"Bridging the gap between engineering classrooms and industry expectations through hands-on practice, live development, and placement readiness."</blockquote>
-        <p class="qb-sub">â€” Aspirova Technologies</p>
+        <p class="qb-sub">— Aspirova Technologies</p>
       </div>
     </div>
 
@@ -393,7 +406,7 @@
           <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#FF9900;color:#1A1A1A;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">A</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Amazon</span></div>
           <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#0070AD;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">C</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Capgemini</span></div>
         </div>
-        <p style="font-size:12px;color:#8B99B5;text-align:center;margin-top:16px;"><em>Note: shown as styled name badges, not official logo artwork â€” let me know if you have licensed logo files to use instead.</em></p>
+        <p style="font-size:12px;color:#8B99B5;text-align:center;margin-top:16px;"><em>Note: shown as styled name badges, not official logo artwork — let me know if you have licensed logo files to use instead.</em></p>
       </div>
     </section>
 
@@ -405,15 +418,15 @@
         <div class="faq-accordion">
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">How long does the internship program run? <span class="faq-toggle-icon">+</span></button>
-            <div class="faq-answer"><p>[Add your actual program duration here â€” e.g. 4, 8, or 12 weeks depending on the track.]</p></div>
+            <div class="faq-answer"><p>[Add your actual program duration here — e.g. 4, 8, or 12 weeks depending on the track.]</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">Do I get a certificate after completion? <span class="faq-toggle-icon">+</span></button>
-            <div class="faq-answer"><p>[Confirm your certification process here â€” who issues it, and what it verifies.]</p></div>
+            <div class="faq-answer"><p>[Confirm your certification process here — who issues it, and what it verifies.]</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">Is this open to diploma and non-CS students? <span class="faq-toggle-icon">+</span></button>
-            <div class="faq-answer"><p>Yes â€” our programs are designed for engineering and diploma students across all streams, not just Computer Science.</p></div>
+            <div class="faq-answer"><p>Yes — our programs are designed for engineering and diploma students across all streams, not just Computer Science.</p></div>
           </div>
           <div class="faq-item">
             <button class="faq-question" onclick="toggleFaq(this)">Do you guarantee job placement? <span class="faq-toggle-icon">+</span></button>
@@ -479,7 +492,7 @@
           <div class="value-card reveal">
             <div class="value-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 17a2 2 0 0 0 2-2 2 2 0 0 0-2-2H9.5L6 9.5"/><path d="M13 15h2.5L20 19"/><path d="M2 10l4-4 4.5 4.5L14 7l6 6-4 4-3-3-2 2-4-4-2 2-2-2z"/></svg></div>
             <h4>Empowerment &amp; Inclusion</h4>
-            <p>We welcome students from all academic backgroundsâ€”Mechanical, Civil, Arts, Management, or Commerceâ€”and train them into successful tech professionals.</p>
+            <p>We welcome students from all academic backgrounds—Mechanical, Civil, Arts, Management, or Commerce—and train them into successful tech professionals.</p>
           </div>
           <div class="value-card reveal">
             <div class="value-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 19 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></div>
@@ -537,12 +550,12 @@
       </div>
     </section>
 
-    <!-- LAB & TRAINING GALLERY (generic representative stock photos â€” swap for your real classroom/lab photos when ready) -->
+    <!-- LAB & TRAINING GALLERY (generic representative stock photos — swap for your real classroom/lab photos when ready) -->
     <section id="gallery" style="background:var(--offwhite);">
       <div class="container">
         <div class="section-label">Behind the Scenes</div>
         <h2 class="section-title">Our Training Environment</h2>
-        <p class="section-sub"><em>Representative training-environment photos shown below â€” swap these for real photos of your own classrooms and students whenever you're ready.</em></p>
+        <p class="section-sub"><em>Representative training-environment photos shown below — swap these for real photos of your own classrooms and students whenever you're ready.</em></p>
         <div class="gallery-grid">
           <div class="gallery-item"><img src="https://images.pexels.com/photos/10638075/pexels-photo-10638075.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" alt="Students learning at computers in a classroom" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
           <div class="gallery-item"><img src="https://images.pexels.com/photos/5621933/pexels-photo-5621933.jpeg?auto=compress&cs=tinysrgb&w=600&h=450&fit=crop" alt="Students collaborating on computers" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
@@ -552,41 +565,41 @@
       </div>
     </section>
 
-    <!-- TRAINER PROFILES (placeholder â€” replace with real trainer names, roles, photos, bios) -->
+    <!-- TRAINER PROFILES (placeholder — replace with real trainer names, roles, photos, bios) -->
     <section id="trainers">
       <div class="container">
         <div class="section-label">Meet The Team</div>
         <h2 class="section-title">Trainer Profiles</h2>
-        <p class="section-sub"><em>Placeholder profiles below â€” replace with your real trainers' names, roles, photos, and bios.</em></p>
+        <p class="section-sub"><em>Placeholder profiles below — replace with your real trainers' names, roles, photos, and bios.</em></p>
         <div class="trainers-grid">
           <div class="trainer-card">
             <div class="trainer-avatar" style="background:#E5E9F2;display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#8B99B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg></div>
             <h4>Trainer Name</h4>
             <div class="role">Add Role / Specialization</div>
-            <p>[Add a short bio â€” experience, specialization, and what students can expect to learn.]</p>
+            <p>[Add a short bio — experience, specialization, and what students can expect to learn.]</p>
           </div>
           <div class="trainer-card">
             <div class="trainer-avatar" style="background:#E5E9F2;display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#8B99B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg></div>
             <h4>Trainer Name</h4>
             <div class="role">Add Role / Specialization</div>
-            <p>[Add a short bio â€” experience, specialization, and what students can expect to learn.]</p>
+            <p>[Add a short bio — experience, specialization, and what students can expect to learn.]</p>
           </div>
           <div class="trainer-card">
             <div class="trainer-avatar" style="background:#E5E9F2;display:flex;align-items:center;justify-content:center;"><svg class="icon-svg" viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#8B99B5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg></div>
             <h4>Trainer Name</h4>
             <div class="role">Add Role / Specialization</div>
-            <p>[Add a short bio â€” experience, specialization, and what students can expect to learn.]</p>
+            <p>[Add a short bio — experience, specialization, and what students can expect to learn.]</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CERTIFICATION DETAILS (placeholder â€” confirm and edit exact wording) -->
+    <!-- CERTIFICATION DETAILS (placeholder — confirm and edit exact wording) -->
     <section id="certification" style="background:var(--offwhite);">
       <div class="container">
         <div class="section-label">Recognition</div>
         <h2 class="section-title">Certification Details</h2>
-        <p class="section-sub"><em>Placeholder text below â€” confirm and edit the exact certification process and wording for your programs.</em></p>
+        <p class="section-sub"><em>Placeholder text below — confirm and edit the exact certification process and wording for your programs.</em></p>
         <div class="content-card" style="max-width:760px;margin:0 auto;">
           <p>Upon successful completion of a program, students receive a certificate confirming the training undertaken and skills covered.</p>
           <p>[Add specifics: who issues the certificate, whether it's verifiable online, what criteria must be met (attendance %, project submission, assessment score), and any industry recognition or affiliations.]</p>
@@ -602,7 +615,7 @@
       <div class="container">
         <div class="section-label" style="color:rgba(244,163,26,0.9)">Who Can Join</div>
         <h2 class="section-title">All Streams Welcome</h2>
-        <p class="section-sub">Whether you are a B.E., B.Tech, BCA, MCA, MBA, B.Sc or Diploma holder â€” we have a program tailored for you.</p>
+        <p class="section-sub">Whether you are a B.E., B.Tech, BCA, MCA, MBA, B.Sc or Diploma holder — we have a program tailored for you.</p>
         
         <div class="streams-grid">
           <div class="stream-card reveal">
@@ -670,13 +683,13 @@
           <div>
             <div class="content-card reveal">
               <h4 class="ck-title">Internship Overview</h4>
-              <p>Aspirova Technologies offers comprehensive internship opportunities for UG, PG, and Diploma students. Our internships aren't about shadowing or passive learningâ€”you will join a structured project group and contribute code, designs, or analysis to a real technical pipeline.</p>
+              <p>Aspirova Technologies offers comprehensive internship opportunities for UG, PG, and Diploma students. Our internships aren't about shadowing or passive learning—you will join a structured project group and contribute code, designs, or analysis to a real technical pipeline.</p>
               <p>Under the instruction of senior engineering mentors, you'll learn how to navigate professional version control, manage agile sprint cycles, and structure features according to industry standards.</p>
               
               <div class="feature-grid">
                 <div class="feature-item"><div class="fi-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.5 3-6 7-6s7 2.5 7 6"/><circle cx="17" cy="8" r="2.5"/><path d="M16 14.2c2.6.6 4.5 2.7 4.5 5.8"/></svg></div><div><h5>Stream Alignment</h5><p>Tailored project pipelines for Computer Science, Electronics, Mechanical, and Civil streams.</p></div></div>
                 <div class="feature-item"><div class="fi-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><div><h5>Live Development</h5><p>Build modules, debug systems, and execute tests on active codebases.</p></div></div>
-                <div class="feature-item"><div class="fi-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg>â€<svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div><div><h5>Professional Workflows</h5><p>Learn Git, Jira, Agile sprint planning, and code review processes.</p></div></div>
+                <div class="feature-item"><div class="fi-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.5-7 8-7s8 3 8 7"/></svg><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg></div><div><h5>Professional Workflows</h5><p>Learn Git, Jira, Agile sprint planning, and code review processes.</p></div></div>
                 <div class="feature-item"><div class="fi-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div><div><h5>Experience Credentials</h5><p>Walk away with a verified internship certificate and performance review.</p></div></div>
               </div>
             </div>
@@ -740,7 +753,7 @@
             <div class="content-card reveal">
               <h4 class="ck-title">Project Guidance Overview</h4>
               <p>Completing final year projects can be challenging. We support students from B.E., B.Tech, MCA, M.Tech, and Diploma programs to successfully implement their academic projects. Our mentors guide you step-by-step through technology stacks, assembly protocols, and testing phases.</p>
-              <p>We don't just hand over codeâ€”we ensure you understand the architecture, design choices, and data flows, preparing you to answer any question from external academic examiners with confidence.</p>
+              <p>We don't just hand over code—we ensure you understand the architecture, design choices, and data flows, preparing you to answer any question from external academic examiners with confidence.</p>
               
               <div class="feature-grid">
                 <div class="feature-item"><div class="fi-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></svg></div><div><h5>Technology Selection</h5><p>Choose from IEEE standards, IoT, AI/ML, Cloud, Robotics, Embedded Systems, or structural CAD designs.</p></div></div>
@@ -931,7 +944,7 @@
       <div class="qb-overlay"></div>
       <div class="qb-content">
         <span class="qb-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L2 19v3h3l7.3-7.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2-2z"/></svg></span>
-        <blockquote>"We train you on the tools that top companies use today â€” so you are ready to contribute from day one."</blockquote>
+        <blockquote>"We train you on the tools that top companies use today — so you are ready to contribute from day one."</blockquote>
         <p class="qb-sub">Industry Skills · Live Practice · Real Projects</p>
       </div>
     </div>
@@ -1010,7 +1023,7 @@
       <div class="container">
         <div class="section-label">Technology Programs</div>
         <h2 class="section-title">Courses We Offer</h2>
-        <p class="section-sub">Industry-oriented, hands-on training programs in software development and embedded &amp; automotive technologies â€” designed for engineering and diploma students of every stream.</p>
+        <p class="section-sub">Industry-oriented, hands-on training programs in software development and embedded &amp; automotive technologies — designed for engineering and diploma students of every stream.</p>
 
         <div class="courses-grid">
 
@@ -1080,7 +1093,7 @@
             <h3>Embedded Systems</h3>
             <p>Embedded C fundamentals, microcontroller programming, communication protocols and real hardware interfacing using STM32.</p>
             <div class="course-meta">
-              <span>Duration: 3â€“4 Months</span>
+              <span>Duration: 3–4 Months</span>
               <span>Offline / Hybrid</span>
               <span>Beginner to Advanced</span>
             </div>
@@ -1118,7 +1131,7 @@
 
           <div class="course-card reveal" id="embedded-c">
             <h3>Embedded C</h3>
-            <p>Deep-dive into C for microcontrollers â€” memory-mapped I/O, interrupts, timers and low-level hardware register programming.</p>
+            <p>Deep-dive into C for microcontrollers — memory-mapped I/O, interrupts, timers and low-level hardware register programming.</p>
             <div class="course-meta">
               <span>Duration: 6 Weeks</span>
               <span>Offline</span>
@@ -1259,7 +1272,7 @@
       <div class="container">
         <div class="section-label" style="color:rgba(244,163,26,0.9)">For Companies &amp; Organisations</div>
         <h2 class="section-title">Business Solutions</h2>
-        <p class="section-sub">Beyond student training, Aspirova Technologies partners with businesses on software development, automation and engineering consulting â€” keeping our corporate services distinct from our student programs.</p>
+        <p class="section-sub">Beyond student training, Aspirova Technologies partners with businesses on software development, automation and engineering consulting — keeping our corporate services distinct from our student programs.</p>
 
         <div class="business-grid">
           <div class="business-card reveal" id="software-development">
@@ -1476,7 +1489,7 @@
               <div class="contact-item"><div class="ci-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><p>Aspirova Technologies, Bengaluru, Karnataka, India</p></div>
               <div class="contact-item"><div class="ci-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><p>+91 63617 92249</p></div>
               <div class="contact-item"><div class="ci-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div><p>hr@aspirovatechnologies.com</p></div>
-              <div class="contact-item"><div class="ci-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M5 3 3 5"/><path d="M19 3l2 2"/></svg></div><p>Monday â€“ Saturday: 9:00 AM â€“ 6:00 PM</p></div>
+              <div class="contact-item"><div class="ci-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M5 3 3 5"/><path d="M19 3l2 2"/></svg></div><p>Monday – Saturday: 9:00 AM – 6:00 PM</p></div>
             </div>
             
             <form class="contact-form reveal" id="contactForm">
@@ -1599,10 +1612,10 @@
         <a href="javascript:void(0)" onclick="showPage('contact')">Contact Us</a>
       </div>
 
-      <p class="footer-v2-tagline">Turning Aspirations into Careers â€” industry-oriented training, internships, projects and placement support for graduates and diploma students.</p>
+      <p class="footer-v2-tagline">Turning Aspirations into Careers — industry-oriented training, internships, projects and placement support for graduates and diploma students.</p>
 
       <div class="footer-v2-bottom">
-        <span>Copyright Â© 2026 Aspirova Technologies</span>
+        <span>Copyright © 2026 Aspirova Technologies</span>
         <span>|</span>
         <span>All Rights Reserved</span>
         <span>|</span>
@@ -1618,7 +1631,7 @@
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('privacyModal')" aria-label="Close">&times;</button>
       <h3>Privacy Policy</h3>
-      <p><em>Placeholder text â€” replace with your reviewed, final Privacy Policy before publishing.</em></p>
+      <p><em>Placeholder text — replace with your reviewed, final Privacy Policy before publishing.</em></p>
       <p>Aspirova Technologies collects information you submit through our enquiry form (such as name, phone number, email, stream, and program interest) solely to respond to your enquiry and share relevant program details.</p>
       <p>We do not sell your personal information to third parties. Data may be shared with our internal training and placement team for the purpose of following up on your enquiry.</p>
       <p>You may request that we delete your information at any time by contacting us at the details listed in the Contact section of this site.</p>
@@ -1631,7 +1644,7 @@
     <div class="modal-content">
       <button class="modal-close" onclick="closeModal('termsModal')" aria-label="Close">&times;</button>
       <h3>Terms and Conditions</h3>
-      <p><em>Placeholder text â€” replace with your reviewed, final Terms and Conditions before publishing.</em></p>
+      <p><em>Placeholder text — replace with your reviewed, final Terms and Conditions before publishing.</em></p>
       <p>By enrolling in any internship, project support, or job guidance program with Aspirova Technologies, you agree to attend scheduled sessions, complete assigned coursework, and follow the code of conduct communicated by your program mentor.</p>
       <p>Program fees (if applicable), refund conditions, and certification eligibility criteria will be communicated to you directly before enrollment is confirmed.</p>
       <p>Aspirova Technologies facilitates referrals and hiring-partner introductions on a best-effort basis and does not guarantee job placement.</p>

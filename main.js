@@ -1,9 +1,9 @@
-﻿// ===== WELCOME LANGUAGE ROTATOR =====
+// ===== WELCOME LANGUAGE ROTATOR =====
 const langs = [
-  { greeting: 'à²¨à²®à²¸à³à²•à²¾à²°,',  rest: 'Aspirova Technologies à²—à³† à²¸à³à²µà²¾à²—à²¤' },
-  { greeting: 'Hello,',      rest: 'Welcome to Aspirova Technologies' },
-  { greeting: 'à¤¨à¤®à¤¸à¥à¤¤à¥‡,',    rest: 'Aspirova Technologies à¤®à¥‡à¤‚ à¤†à¤ªà¤•à¤¾ à¤¸à¥à¤µà¤¾à¤—à¤¤ à¤¹à¥ˆ' },
-  { greeting: 'à°¨à°®à°¸à±à°•à°¾à°°à°‚,', rest: 'Aspirova Technologies à°•à± à°¸à±à°µà°¾à°—à°¤à°‚' },
+  { greeting: 'ನಮಸ್ಕಾರ,', rest: 'Aspirova Technologies ಗೆ ಸ್ವಾಗತ' },
+  { greeting: 'Hello,', rest: 'Welcome to Aspirova Technologies' },
+  { greeting: 'नमस्ते,', rest: 'Aspirova Technologies में आपका स्वागत है' },
+  { greeting: 'నమస్కారం,', rest: 'Aspirova Technologies కు స్వాగతం' }
 ];
 let li = 0;
 const wl  = document.getElementById('welcomeLang');
@@ -136,9 +136,9 @@ function initRoute() {
   showPage('home');
 }
 
-// ===== STUDENT PORTAL â€” TEMPORARILY DISABLED =====
+// ===== STUDENT PORTAL — TEMPORARILY DISABLED =====
 // SECURITY FIX: This portal previously checked a hardcoded array of student/admin
-// IDs directly in this JavaScript file. That is not real authentication â€” anyone
+// IDs directly in this JavaScript file. That is not real authentication — anyone
 // could open browser dev tools, read the list, and log in (including as admin).
 // The insecure credential list and client-side check have been removed. The portal
 // now always shows the "temporarily unavailable" notice until it is wired up to a
@@ -146,7 +146,7 @@ function initRoute() {
 // credentials on a server instead of inside the page's source code.
 
 function validatePortalAccess() {
-  // Disabled on purpose â€” see note above. No credentials are checked client-side.
+  // Disabled on purpose — see note above. No credentials are checked client-side.
   return;
 }
 
@@ -289,7 +289,7 @@ function renderAdminEnquiries() {
       <td style="padding:12px 8px;"><a href="mailto:${enq.email}" style="color:var(--blue);">${escapeHtml(enq.email)}</a></td>
       <td style="padding:12px 8px;">${escapeHtml(enq.stream || 'N/A')}</td>
       <td style="padding:12px 8px;"><span class="welcome-badge" style="font-size:11px; padding:3px 8px; background:rgba(26,58,107,0.1); color:var(--blue); margin:0;">${escapeHtml(enq.program || 'General')}</span></td>
-      <td style="padding:12px 8px; max-width: 220px; word-wrap: break-word;">${escapeHtml(enq.message || 'â€”')}</td>
+      <td style="padding:12px 8px; max-width: 220px; word-wrap: break-word;">${escapeHtml(enq.message || '—')}</td>
       <td style="padding:12px 8px; text-align:center;">
         <button onclick="deleteEnquiry(${actualIndex})" class="action-delete-btn">Delete</button>
       </td>
@@ -419,7 +419,7 @@ function applyForJob(jobTitle) {
 
 // ===== FORM SUBMISSION HANDLER =====
 // FIX: The old version only saved the enquiry to this visitor's own browser, then
-// opened a blank Google Form and made the visitor type everything in again â€” many
+// opened a blank Google Form and made the visitor type everything in again — many
 // people would simply leave at that point. This version submits the enquiry
 // directly from the page to a backend form API (Formspree), so nothing needs to
 // be re-typed and the enquiry reaches your inbox in one step.
@@ -448,7 +448,7 @@ async function handleFormSubmit(e) {
     date: new Date().toLocaleString()
   };
   
-  // Local backup copy only (useful offline/for debugging) â€” the line above is the
+  // Local backup copy only (useful offline/for debugging) — the line above is the
   // real delivery mechanism now, so enquiries no longer depend on this device.
   let enquiries = [];
   try {
