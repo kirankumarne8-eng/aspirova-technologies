@@ -3239,12 +3239,13 @@ footer ul li a:hover {
   width: 54px;
   height: 54px;
   border-radius: 13px;
-  background: #0A1628;
+  background: #FFFFFF;
+  border: 1.5px solid #E9EDF5;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 54px;
-  box-shadow: 0 6px 18px rgba(10, 22, 40, 0.16);
+  box-shadow: 0 6px 18px rgba(10, 22, 40, 0.1);
   overflow: hidden;
 }
 
@@ -3348,7 +3349,10 @@ footer ul li a:hover {
     font-size: clamp(12px, 4vw, 14px);
   }
   .brand-tagline {
-    display: none;
+    font-size: 7.5px;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+    white-space: nowrap;
   }
   .brand-mark-wrap {
     width: 34px;
