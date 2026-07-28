@@ -126,10 +126,11 @@
           <a href="javascript:void(0)" onclick="showPage('blogs')" data-page="blogs">Blogs</a>
           <a href="javascript:void(0)" onclick="showPage('careers')" data-page="careers">Career</a>
           <a href="javascript:void(0)" onclick="showPage('portal')" data-page="portal">Student Portal</a>
+          <a href="javascript:void(0)" onclick="showPage('certificate-verification')" data-page="certificate-verification">Certificate Verification</a>
           <a href="javascript:void(0)" onclick="showPage('business')" data-page="business">Business Solutions</a>
         </div>
       </div>
-      <a href="javascript:void(0)" onclick="window.open('https://forms.gle/Ksw5PSKiHsj9hfGg8','_blank','noopener')" class="nav-cta">Enroll Now</a>
+      <a href="javascript:void(0)" onclick="showPage('contact')" class="nav-cta">Enroll Now</a>
     </div>
     <div class="hamburger" onclick="toggleMobileNav()">
       <span></span>
@@ -168,10 +169,11 @@
         <a href="javascript:void(0)" onclick="showPage('blogs')" data-page="blogs">Blogs</a>
         <a href="javascript:void(0)" onclick="showPage('careers')" data-page="careers">Career</a>
         <a href="javascript:void(0)" onclick="showPage('portal')" data-page="portal">Student Portal</a>
+        <a href="javascript:void(0)" onclick="showPage('certificate-verification')" data-page="certificate-verification">Certificate Verification</a>
         <a href="javascript:void(0)" onclick="showPage('business')" data-page="business">Business Solutions</a>
       </div>
     </div>
-    <a href="javascript:void(0)" onclick="window.open('https://forms.gle/Ksw5PSKiHsj9hfGg8','_blank','noopener')" class="mob-cta">Enroll Now →</a>
+    <a href="javascript:void(0)" onclick="showPage('contact')" class="mob-cta">Enroll Now →</a>
   </div>
 
   <!-- ==================== HOME PAGE SECTION ==================== -->
@@ -356,48 +358,50 @@
         <h2 class="section-title">Skills Employers Are Hiring For</h2>
         <p class="section-sub">We train you on the latest tools and technologies actively used in today's top companies.</p>
         
-        <div class="tech-marquee">
+        <div class="tech-marquee" role="list" aria-label="Technologies we train on">
           <div class="tech-row row-1">
             <div class="tech-track">
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div><p>Python</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div><p>PHP</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="JQuery"></div><p>JQuery</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div><p>JavaScript</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"></div><p>Android</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"></div><p>Java</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"></div><p>Laravel</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div><p>HTML</p></div>
-              
-              <!-- duplicate set for seamless loop -->
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div><p>Python</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div><p>PHP</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="JQuery"></div><p>JQuery</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div><p>JavaScript</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"></div><p>Android</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"></div><p>Java</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"></div><p>Laravel</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div><p>HTML</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy"></div><p>Python</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" loading="lazy"></div><p>PHP</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="JQuery" loading="lazy"></div><p>JQuery</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy"></div><p>JavaScript</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" loading="lazy"></div><p>Android</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy"></div><p>Java</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" loading="lazy"></div><p>Laravel</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" loading="lazy"></div><p>HTML</p></div>
+
+              <!-- Duplicate set purely for the seamless CSS marquee loop (visual only).
+                   aria-hidden + tabindex="-1" so assistive tech and keyboard users
+                   never see each technology listed twice. -->
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"></div><p>Python</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" loading="lazy"></div><p>PHP</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="" loading="lazy"></div><p>JQuery</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"></div><p>JavaScript</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="" loading="lazy"></div><p>Android</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy"></div><p>Java</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="" loading="lazy"></div><p>Laravel</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"></div><p>HTML</p></div>
             </div>
           </div>
-          
+
           <div class="tech-row row-2">
             <div class="tech-track">
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div><p>CSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS"></div><p>TailwindCSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SpringBoot"></div><p>SpringBoot</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div><p>Flutter</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div><p>React</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"></div><p>MySQL</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI/ML"></div><p>AI / ML</p></div>
-              
-              <!-- duplicate set for seamless loop -->
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div><p>CSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS"></div><p>TailwindCSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SpringBoot"></div><p>SpringBoot</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div><p>Flutter</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div><p>React</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"></div><p>MySQL</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI/ML"></div><p>AI / ML</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" loading="lazy"></div><p>CSS</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" loading="lazy"></div><p>TailwindCSS</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SpringBoot" loading="lazy"></div><p>SpringBoot</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy"></div><p>Flutter</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy"></div><p>React</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy"></div><p>MySQL</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI/ML" loading="lazy"></div><p>AI / ML</p></div>
+
+              <!-- Duplicate set purely for the seamless CSS marquee loop (visual only). -->
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"></div><p>CSS</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" loading="lazy"></div><p>TailwindCSS</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="" loading="lazy"></div><p>SpringBoot</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" loading="lazy"></div><p>Flutter</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy"></div><p>React</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"></div><p>MySQL</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="" loading="lazy"></div><p>AI / ML</p></div>
             </div>
           </div>
         </div>
@@ -410,17 +414,17 @@
         <div class="section-label">Proof, Not Promises</div>
         <h2 class="section-title">Our Hiring Partners</h2>
         <p class="section-sub">We work with recruiters at leading companies to help our trained students get noticed.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:32px;">
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#0B4F9C;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">I</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Infosys</span></div>
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#341B54;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">W</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Wipro</span></div>
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#A100FF;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">A</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Accenture</span></div>
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#054F77;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">T</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">TCS</span></div>
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#0530AD;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">I</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">IBM</span></div>
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#EA4335;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">G</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Google</span></div>
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#FF9900;color:#1A1A1A;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">A</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Amazon</span></div>
-          <div class="partner-logo" style="max-width:170px;gap:10px;padding:0 14px;"><span style="width:30px;height:30px;flex:none;border-radius:8px;background:#0070AD;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:15px;">C</span><span style="font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);">Capgemini</span></div>
+        <div class="hiring-partners-grid">
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#0B4F9C;">I</span><span class="partner-badge-name">Infosys</span></div>
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#341B54;">W</span><span class="partner-badge-name">Wipro</span></div>
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#A100FF;">A</span><span class="partner-badge-name">Accenture</span></div>
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#054F77;">T</span><span class="partner-badge-name">TCS</span></div>
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#0530AD;">I</span><span class="partner-badge-name">IBM</span></div>
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#EA4335;">G</span><span class="partner-badge-name">Google</span></div>
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#FF9900;color:#1A1A1A;">A</span><span class="partner-badge-name">Amazon</span></div>
+          <div class="partner-logo partner-badge"><span class="partner-badge-icon" style="background:#0070AD;">C</span><span class="partner-badge-name">Capgemini</span></div>
         </div>
-        <p style="font-size:12px;color:#8B99B5;text-align:center;margin-top:16px;"><em>Note: shown as styled name badges, not official logo artwork — let me know if you have licensed logo files to use instead.</em></p>
+        <p class="hiring-partners-note"><em>Note: shown as styled name badges, not official logo artwork — let me know if you have licensed logo files to use instead.</em></p>
       </div>
     </section>
 
@@ -443,7 +447,7 @@
             <div class="faq-answer"><p>Yes — our programs are designed for engineering and diploma students across all streams, not just Computer Science.</p></div>
           </div>
           <div class="faq-item">
-            <button class="faq-question" onclick="toggleFaq(this)">Do you guarantee job placement? <span class="faq-toggle-icon">+</span></button>
+            <button class="faq-question" onclick="toggleFaq(this)">What placement support do you provide? <span class="faq-toggle-icon">+</span></button>
             <div class="faq-answer"><p>Placement assistance is provided through resume building, mock interviews, career guidance, and employer referrals. Selection depends on student performance and company hiring requirements.</p></div>
           </div>
           <div class="faq-item">
@@ -460,7 +464,7 @@
         <h2>Ready to Build Your Future?</h2>
         <p>Join hundreds of graduates who chose Aspirova Technologies to launch their careers with confidence.</p>
         <div class="cta-btns">
-          <a href="javascript:void(0)" onclick="window.open('https://forms.gle/Ksw5PSKiHsj9hfGg8','_blank','noopener')" class="btn-dark">Enroll Today →</a>
+          <a href="javascript:void(0)" onclick="showPage('contact')" class="btn-dark">Enroll Today →</a>
           <a href="tel:+916361792249" class="btn-white"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Us Now</a>
         </div>
       </div>
@@ -638,37 +642,37 @@
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span><h4>Computer Science</h4><p>CSE / IT / BCA / MCA</p></div>
           </div>
           <div class="stream-card reveal">
-            <div class="sc-bg" style="background: linear-gradient(135deg, #1A3A6B 0%, #0A1628 100%);"></div>
+            <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1557701197-2f99da0922dd?w=600&q=70');"></div>
             <div class="sc-overlay"></div>
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg></span><h4>Electronics</h4><p>ECE / EEE / EIE</p></div>
           </div>
           <div class="stream-card reveal">
-            <div class="sc-bg" style="background: linear-gradient(135deg, #6B4A1A 0%, #0A1628 100%);"></div>
+            <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1701448150058-43d6d199b103?w=600&q=70');"></div>
             <div class="sc-overlay"></div>
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span><h4>Mechanical</h4><p>Mech / Auto / Production</p></div>
           </div>
           <div class="stream-card reveal">
-            <div class="sc-bg" style="background: linear-gradient(135deg, #1A4A5A 0%, #0A1628 100%);"></div>
+            <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1609867271967-a82f85c48531?w=600&q=70');"></div>
             <div class="sc-overlay"></div>
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V9l6-4 6 4v12"/><path d="M10 21v-6h4v6"/></svg></span><h4>Civil Engineering</h4><p>Civil / Structural</p></div>
           </div>
           <div class="stream-card reveal">
-            <div class="sc-bg" style="background: linear-gradient(135deg, #3A1A6B 0%, #0A1628 100%);"></div>
+            <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1758518729685-f88df7890776?w=600&q=70');"></div>
             <div class="sc-overlay"></div>
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span><h4>Management</h4><p>MBA / BBA / Commerce</p></div>
           </div>
           <div class="stream-card reveal">
-            <div class="sc-bg" style="background: linear-gradient(135deg, #1A6B4A 0%, #0A1628 100%);"></div>
+            <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1646956141700-55bd6bc59d95?w=600&q=70');"></div>
             <div class="sc-overlay"></div>
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6.5L4.5 17a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L15 8.5V2"/><line x1="8" y1="2" x2="16" y2="2"/><line x1="8.5" y1="13" x2="15.5" y2="13"/></svg></span><h4>Science</h4><p>B.Sc / M.Sc / Physics</p></div>
           </div>
           <div class="stream-card reveal">
-            <div class="sc-bg" style="background: linear-gradient(135deg, #6B1A3A 0%, #0A1628 100%);"></div>
+            <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=600&q=70');"></div>
             <div class="sc-overlay"></div>
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg></span><h4>Arts and Humanities</h4><p>BA / MA / Literature</p></div>
           </div>
           <div class="stream-card reveal">
-            <div class="sc-bg" style="background: linear-gradient(135deg, #1A3A6B 0%, #4A2E0A 100%);"></div>
+            <div class="sc-bg" style="background-image:url('https://images.unsplash.com/photo-1521798604188-0d6595d6d6ae?w=600&q=70');"></div>
             <div class="sc-overlay"></div>
             <div class="sc-content"><span class="stream-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-3"/></svg></span><h4>Diploma Students</h4><p>All Polytechnic Streams</p></div>
           </div>
@@ -970,48 +974,50 @@
         <h2 class="section-title">Skills Employers Are Hiring For</h2>
         <p class="section-sub">We train you on the latest tools and technologies actively used in today's top companies.</p>
         
-        <div class="tech-marquee">
+        <div class="tech-marquee" role="list" aria-label="Technologies we train on">
           <div class="tech-row row-1">
             <div class="tech-track">
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div><p>Python</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div><p>PHP</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="JQuery"></div><p>JQuery</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div><p>JavaScript</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"></div><p>Android</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"></div><p>Java</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"></div><p>Laravel</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div><p>HTML</p></div>
-              
-              <!-- duplicate set for seamless loop -->
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div><p>Python</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"></div><p>PHP</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="JQuery"></div><p>JQuery</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"></div><p>JavaScript</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android"></div><p>Android</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"></div><p>Java</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"></div><p>Laravel</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"></div><p>HTML</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" loading="lazy"></div><p>Python</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" loading="lazy"></div><p>PHP</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="JQuery" loading="lazy"></div><p>JQuery</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy"></div><p>JavaScript</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" loading="lazy"></div><p>Android</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" loading="lazy"></div><p>Java</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" loading="lazy"></div><p>Laravel</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" loading="lazy"></div><p>HTML</p></div>
+
+              <!-- Duplicate set purely for the seamless CSS marquee loop (visual only).
+                   aria-hidden + tabindex="-1" so assistive tech and keyboard users
+                   never see each technology listed twice. -->
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="" loading="lazy"></div><p>Python</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="" loading="lazy"></div><p>PHP</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="" loading="lazy"></div><p>JQuery</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"></div><p>JavaScript</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="" loading="lazy"></div><p>Android</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy"></div><p>Java</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="" loading="lazy"></div><p>Laravel</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"></div><p>HTML</p></div>
             </div>
           </div>
-          
+
           <div class="tech-row row-2">
             <div class="tech-track">
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div><p>CSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS"></div><p>TailwindCSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SpringBoot"></div><p>SpringBoot</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div><p>Flutter</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div><p>React</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"></div><p>MySQL</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI/ML"></div><p>AI / ML</p></div>
-              
-              <!-- duplicate set for seamless loop -->
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"></div><p>CSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS"></div><p>TailwindCSS</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SpringBoot"></div><p>SpringBoot</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter"></div><p>Flutter</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"></div><p>React</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"></div><p>MySQL</p></div>
-              <div class="tech-item"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI/ML"></div><p>AI / ML</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" loading="lazy"></div><p>CSS</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" loading="lazy"></div><p>TailwindCSS</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="SpringBoot" loading="lazy"></div><p>SpringBoot</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" loading="lazy"></div><p>Flutter</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" loading="lazy"></div><p>React</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" loading="lazy"></div><p>MySQL</p></div>
+              <div class="tech-item" role="listitem"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="AI/ML" loading="lazy"></div><p>AI / ML</p></div>
+
+              <!-- Duplicate set purely for the seamless CSS marquee loop (visual only). -->
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"></div><p>CSS</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="" loading="lazy"></div><p>TailwindCSS</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="" loading="lazy"></div><p>SpringBoot</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" loading="lazy"></div><p>Flutter</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy"></div><p>React</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"></div><p>MySQL</p></div>
+              <div class="tech-item" aria-hidden="true" tabindex="-1"><div class="t-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="" loading="lazy"></div><p>AI / ML</p></div>
             </div>
           </div>
         </div>
@@ -1024,7 +1030,7 @@
         <h2>Ready to Build Your Future?</h2>
         <p>Join hundreds of graduates who chose Aspirova Technologies to launch their careers with confidence.</p>
         <div class="cta-btns">
-          <a href="javascript:void(0)" onclick="window.open('https://forms.gle/Ksw5PSKiHsj9hfGg8','_blank','noopener')" class="btn-dark">Enroll Today →</a>
+          <a href="javascript:void(0)" onclick="showPage('contact')" class="btn-dark">Enroll Today →</a>
           <a href="tel:+916361792249" class="btn-white"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call Us Now</a>
         </div>
       </div>
@@ -1384,46 +1390,83 @@
     <section>
       <div class="container">
         <div class="section-label">Student Portal</div>
-        <h2 class="section-title">Coming Soon</h2>
-        <p class="section-sub">We are building a secure portal where students can manage their entire training journey in one place.</p>
+        <h2 class="section-title">Authorized Video Training Access</h2>
+        <p class="section-sub">Enter your registered Student ID or Email to access recorded classroom training sessions and lab walkthroughs.</p>
 
-        <div class="portal-coming-soon reveal">
-          <div class="portal-coming-soon-icon">
-            <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          </div>
-          <h3>We're building a secure Student Portal</h3>
-          <p>It's currently in development and will soon let you:</p>
+        <!-- Access Verification Card -->
+        <!-- NOTE: The old client-side login (a hardcoded list of student/admin IDs checked in
+             JavaScript) has been removed. Anyone could read those values in the browser's dev
+             tools, so it was not real authentication. This portal is temporarily disabled until
+             it is connected to a proper backend (e.g. Firebase Authentication or Supabase). -->
+        <div id="portalLoginCard" class="portal-comingsoon reveal">
+          <div class="portal-comingsoon-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <span class="portal-comingsoon-badge">Student Portal</span>
+          <h3>Coming Soon</h3>
+          <p class="portal-comingsoon-lead">We are building a secure portal where students can:</p>
+          <ul class="portal-comingsoon-features">
+            <li><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-6M6 20V10M18 20V4"/></svg> Track internship progress</li>
+            <li><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download certificates</li>
+            <li><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Access study materials</li>
+            <li><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg> View attendance</li>
+            <li><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/></svg> Submit assignments</li>
+            <li><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/><path d="M9 12l2 2 4-4"/></svg> Verify certificates</li>
+          </ul>
+          <p class="portal-comingsoon-footnote">In the meantime, contact your program coordinator for class recordings or certificate queries.</p>
+          <a href="javascript:void(0)" onclick="showPage('contact')" class="btn-primary" style="margin-top:20px;">Contact Us →</a>
+        </div>
 
-          <div class="portal-feature-grid">
-            <div class="portal-feature">
-              <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
-              <span>Track internship progress</span>
+        <!-- Unlocked Video Content -->
+        <div id="portalUnlockedContent">
+          <div class="portal-header-bar">
+            <div>
+              <h3 style="font-family:'Syne',sans-serif; font-size:20px; font-weight:800; color:var(--navy); margin-bottom:4px;"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.6-2"/></svg> Unlocked Classroom Videos</h3>
+              <p style="font-size:13.5px; color:#5A6882; margin:0;">Welcome! You have authorized access to the following training resources.</p>
             </div>
-            <div class="portal-feature">
-              <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M20 21H4"/></svg>
-              <span>Download certificates</span>
-            </div>
-            <div class="portal-feature">
-              <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-              <span>Access study materials</span>
-            </div>
-            <div class="portal-feature">
-              <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-              <span>View attendance</span>
-            </div>
-            <div class="portal-feature">
-              <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05 12.25 20.24a5 5 0 0 1-7.07-7.07l9.19-9.19a3.5 3.5 0 0 1 4.95 4.95L10.13 17.5a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
-              <span>Submit assignments</span>
-            </div>
-            <div class="portal-feature">
-              <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/><path d="m9 12 2 2 4-4"/></svg>
-              <span>Verify certificates</span>
-            </div>
+            <button onclick="lockPortalSession()" class="btn-outline-dark" style="padding: 8px 16px; font-size:12px;">Lock Session <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></button>
           </div>
 
-          <div class="hero-btns" style="justify-content:center; margin-top:28px;">
-            <a href="javascript:void(0)" onclick="showPage('contact')" class="btn-primary">Get Notified When It's Live →</a>
+          <!-- Dynamic Video Module Tabs -->
+          <div class="portal-tabs" style="display:flex; gap:10px; margin-bottom:28px; flex-wrap:wrap; border-bottom:1.5px solid #E5E9F2; padding-bottom:12px;">
+            <button class="portal-tab-btn active" data-filter="all" onclick="filterPortalVideos('all')" style="padding:8px 16px; font-size:12.5px; font-family:'Syne',sans-serif; font-weight:700; border-radius:6px; border:none; background:var(--navy); color:#fff; cursor:pointer; transition:var(--transition);">All Videos</button>
+            <button class="portal-tab-btn" data-filter="java" onclick="filterPortalVideos('java')" style="padding:8px 16px; font-size:12.5px; font-family:'Syne',sans-serif; font-weight:700; border-radius:6px; border:none; background:var(--offwhite); color:var(--navy); cursor:pointer; transition:var(--transition);">Java</button>
+            <button class="portal-tab-btn" data-filter="python" onclick="filterPortalVideos('python')" style="padding:8px 16px; font-size:12.5px; font-family:'Syne',sans-serif; font-weight:700; border-radius:6px; border:none; background:var(--offwhite); color:var(--navy); cursor:pointer; transition:var(--transition);">Python</button>
+            <button class="portal-tab-btn" data-filter="embedded_iot" onclick="filterPortalVideos('embedded_iot')" style="padding:8px 16px; font-size:12.5px; font-family:'Syne',sans-serif; font-weight:700; border-radius:6px; border:none; background:var(--offwhite); color:var(--navy); cursor:pointer; transition:var(--transition);">Embedded IoT</button>
+            <button class="portal-tab-btn" data-filter="c_cpp" onclick="filterPortalVideos('c_cpp')" style="padding:8px 16px; font-size:12.5px; font-family:'Syne',sans-serif; font-weight:700; border-radius:6px; border:none; background:var(--offwhite); color:var(--navy); cursor:pointer; transition:var(--transition);">C / C++</button>
           </div>
+
+          <div class="portal-videos-grid" id="portalVideosContainer">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ==================== CERTIFICATE VERIFICATION PAGE SECTION ==================== -->
+  <div id="page-certificate-verification" class="page-section">
+    <section>
+      <div class="container">
+        <div class="section-label">Verify Authenticity</div>
+        <h2 class="section-title">Certificate Verification</h2>
+        <p class="section-sub">Enter the Certificate ID printed on your Aspirova Technologies internship or course completion certificate to verify it.</p>
+
+        <div class="cert-verify-card reveal">
+          <form id="certVerifyForm" novalidate>
+            <div class="form-group">
+              <label for="certIdInput">Certificate ID</label>
+              <input type="text" id="certIdInput" placeholder="e.g. ASP-2026-000123" autocomplete="off" required>
+              <span class="field-error" id="err-certIdInput"></span>
+            </div>
+            <button type="submit" class="form-submit">Verify Certificate →</button>
+          </form>
+
+          <div id="certVerifyResult" class="cert-verify-result" role="status" aria-live="polite"></div>
+
+          <p class="cert-verify-note">
+            <em>Note: this verification tool is not yet connected to our certificate records database, so it
+            currently cannot confirm real certificates. Once connected, entering a valid Certificate ID here
+            will instantly display the recipient's name, program, and issue date.</em>
+          </p>
         </div>
       </div>
     </section>
@@ -1510,20 +1553,31 @@
               <div class="contact-item"><div class="ci-icon"><svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" style="vertical-align:-0.15em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2"/><path d="M5 3 3 5"/><path d="M19 3l2 2"/></svg></div><p>Monday – Saturday: 9:00 AM – 6:00 PM</p></div>
             </div>
             
-            <form class="contact-form reveal" id="contactForm">
+            <form class="contact-form reveal" id="contactForm" novalidate>
+              <div id="formSuccessMsg" class="form-success-msg" role="status" aria-live="polite">
+                <svg class="icon-svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="8 12 11 15 16 9"/></svg>
+                <div>
+                  <strong>Thank you! Your enquiry has been received.</strong>
+                  <p>Our counsellors will reach out to you within 24 hours. You can also continue the conversation on WhatsApp right away.</p>
+                  <a href="#" id="formWhatsappLink" target="_blank" rel="noopener" class="btn-primary" style="margin-top:12px;display:inline-flex;">Continue on WhatsApp →</a>
+                </div>
+              </div>
               <div class="form-row">
                 <div class="form-group">
                   <label for="cName">Your Name *</label>
                   <input type="text" id="cName" placeholder="Full name" required>
+                  <span class="field-error" id="err-cName"></span>
                 </div>
                 <div class="form-group">
                   <label for="cPhone">Phone *</label>
                   <input type="tel" id="cPhone" placeholder="+91 XXXXX XXXXX" required>
+                  <span class="field-error" id="err-cPhone"></span>
                 </div>
               </div>
               <div class="form-group">
                 <label for="cEmail">Email Address *</label>
                 <input type="email" id="cEmail" placeholder="you@example.com" required>
+                <span class="field-error" id="err-cEmail"></span>
               </div>
               <div class="form-row">
                 <div class="form-group">
@@ -1558,9 +1612,8 @@
                 <textarea id="cMsg" placeholder="Tell us more about what you are looking for..."></textarea>
               </div>
               <button type="submit" class="form-submit">Submit Enquiry →</button>
-              <div id="formStatus" class="form-status" style="display:none;"></div>
               <p style="font-size:12px;color:#8B99B5;margin-top:10px;text-align:center;">
-                Your enquiry is submitted directly on this page — no sign-up or external form required.
+                Your enquiry is submitted directly on this page — no external form, no re-typing your details.
               </p>
             </form>
           </div>
@@ -1582,7 +1635,7 @@
     <div class="container">
       <div class="footer-v2-top">
         <a href="javascript:void(0)" onclick="showPage('home')" class="footer-v2-logo">
-          <div class="logo-mark">MK</div>
+          <img src="aspirova-logo.png" alt="Aspirova Technologies MK logo" class="logo-mark-image footer-logo-image">
         </a>
         <div class="footer-v2-divider"></div>
         <div class="footer-v2-social">
@@ -1627,6 +1680,7 @@
         <a href="javascript:void(0)" onclick="showPage('careers')">Career</a>
         <a href="javascript:void(0)" onclick="showPage('blogs')">Blogs</a>
         <a href="javascript:void(0)" onclick="showPage('portal')">Student Portal</a>
+        <a href="javascript:void(0)" onclick="showPage('certificate-verification')">Certificate Verification</a>
         <a href="javascript:void(0)" onclick="showPage('contact')">Contact Us</a>
       </div>
 
@@ -1670,6 +1724,27 @@
     </div>
   </div>
 
+  <script>
+// ===== AUTOMATICALLY GENERATED STUDENT PORTAL VIDEO DATA LIST =====
+// Do not edit this file directly. Drop your MP4 files in the videos folders and run update-videos.ps1
+const videosData = {
+  java: [
+  ],
+  python: [
+  ],
+  embedded_iot: [
+    {
+      title: "Video 20260704 120325",
+      path: "videos/embedded_iot/video_20260704_120325.mp4",
+      duration: "Video",
+      desc: "Class recording for Video 20260704 120325"
+    }
+  ],
+  c_cpp: [
+  ]
+};
+
+</script>
   <script src="main.js"></script>
 </body>
 </html>
