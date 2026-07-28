@@ -1500,6 +1500,41 @@ section {
   transform: translateY(-2px);
 }
 
+.form-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Inline field validation (contact form stays on-page; nothing redirects) */
+.field-invalid {
+  border-color: #D64545 !important;
+}
+
+.field-error {
+  color: #D64545;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.form-status {
+  margin-top: 14px;
+  padding: 13px 16px;
+  border-radius: 9px;
+  background: #EAF9F0;
+  border: 1px solid #BEE8CE;
+  color: #14603F;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+.form-status a {
+  color: #14603F;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: #060E1C;
@@ -2101,6 +2136,37 @@ footer ul li a:hover {
   .hero-visual {
     display: none;
   }
+  /* Hero was fixed at min-height:100vh regardless of device, plus generous
+     desktop spacing — on phones that pushed the fold to ~1.5 screens before any
+     content below it was visible. Letting height follow content and tightening
+     the vertical rhythm below cuts it to roughly 35–40% shorter without
+     removing anything. */
+  .hero {
+    min-height: 0;
+    padding: 84px 5% 36px;
+  }
+  .welcome-badge {
+    padding: 8px 18px;
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+  .welcome-lang {
+    font-size: 15px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 8vw, 40px);
+    margin-bottom: 12px;
+  }
+  .hero-sub {
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: none;
+  }
+  .hero-stats {
+    margin-top: 22px;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2203,152 +2269,75 @@ footer ul li a:hover {
   }
 }
 
-/* ===== STUDENT PORTAL ===== */
-#portalLoginCard {
-  max-width: 480px;
-  margin: 40px auto;
+/* ===== STUDENT PORTAL — COMING SOON ===== */
+.portal-coming-soon {
+  max-width: 720px;
+  margin: 40px auto 0;
   background: #fff;
-  border-radius: 18px;
-  padding: 40px 36px;
+  border-radius: 20px;
+  padding: 48px 40px;
   box-shadow: 0 10px 40px rgba(10,22,40,0.08);
   border: 1px solid #E5E9F2;
   text-align: center;
 }
 
-#portalLoginCard h3 {
+.portal-coming-soon-icon {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--offwhite);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.portal-coming-soon h3 {
   font-family: 'Syne', sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 800;
   color: var(--navy);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-#portalLoginCard p {
-  font-size: 14px;
+.portal-coming-soon > p {
+  font-size: 14.5px;
   color: #6B7A99;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 
-.portal-input-group {
-  display: flex;
-  flex-direction: column;
+.portal-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 14px;
-}
-
-.portal-error-msg {
-  display: none;
-  font-size: 12.5px;
-  color: #D32F2F;
-  margin-top: 8px;
-  font-weight: 600;
   text-align: left;
 }
 
-#portalUnlockedContent {
-  display: none;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-#portalUnlockedContent.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.portal-header-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 36px;
-  flex-wrap: wrap;
-  gap: 16px;
-  border-bottom: 1.5px solid #E5E9F2;
-  padding-bottom: 18px;
-}
-
-.portal-videos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 24px;
-}
-
-.video-card {
-  background: #fff;
-  border-radius: 16px;
-  border: 1px solid #E5E9F2;
-  overflow: hidden;
-  transition: var(--transition);
-}
-
-.video-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 36px rgba(10,22,40,0.08);
-  border-color: var(--accent);
-}
-
-.video-thumbnail-placeholder {
-  position: relative;
-  height: 180px;
-  background: #111D33;
+.portal-feature {
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 42px;
-  background-size: cover;
-  background-position: center;
-}
-
-.video-play-btn {
-  position: absolute;
-  width: 54px;
-  height: 54px;
-  background: var(--accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  color: var(--navy);
-  box-shadow: 0 4px 16px rgba(244,163,26,0.35);
-  transition: var(--transition);
-  cursor: pointer;
-}
-
-.video-play-btn:hover {
-  transform: scale(1.1);
-  background: var(--gold);
-}
-
-.video-duration {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  background: rgba(10,22,40,0.85);
-  color: #fff;
-  font-size: 11px;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--offwhite);
+  border-radius: 12px;
+  font-size: 13.5px;
   font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.video-info {
-  padding: 20px;
-}
-
-.video-info h4 {
-  font-family: 'Syne', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
   color: var(--navy);
-  margin-bottom: 6px;
 }
 
-.video-info p {
-  font-size: 12.5px;
-  color: #6B7A99;
-  line-height: 1.5;
+.portal-feature svg {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .portal-coming-soon {
+    padding: 36px 22px;
+  }
 }
 
 @keyframes shake {
@@ -2892,19 +2881,16 @@ footer ul li a:hover {
 .brand-mark-wrap {
   width: 54px;
   height: 54px;
-  border-radius: 13px;
-  background: #0A1628;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 54px;
-  box-shadow: 0 6px 18px rgba(10, 22, 40, 0.16);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .logo-mark-image {
-  width: 48px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   display: block;
 }
@@ -2915,6 +2901,8 @@ footer ul li a:hover {
   justify-content: center;
   line-height: 1;
   min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .brand-name {
@@ -2924,6 +2912,9 @@ footer ul li a:hover {
   letter-spacing: -0.7px;
   color: #0A1628;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
 
 .brand-tagline {
@@ -2935,6 +2926,10 @@ footer ul li a:hover {
   text-transform: uppercase;
   color: #7181A1;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: block;
 }
 
 @media (max-width: 1180px) {
@@ -2950,38 +2945,55 @@ footer ul li a:hover {
   }
 }
 
+/* Mobile header: smaller logo + shorter navbar, and the tagline always stays
+   visible (truncating with an ellipsis on very narrow screens instead of
+   silently overflowing off-canvas, which is what made it "disappear"). */
 @media (max-width: 768px) {
+  nav {
+    height: 58px;
+  }
+  .mobile-nav {
+    top: 58px;
+  }
   .nav-logo {
     min-width: 0;
-    gap: 9px;
+    max-width: calc(100% - 54px);
+    gap: 8px;
   }
   .brand-mark-wrap {
-    width: 46px;
-    height: 46px;
-    flex-basis: 46px;
-    border-radius: 11px;
-  }
-  .logo-mark-image {
-    width: 41px;
+    width: 38px;
     height: 38px;
+    flex-basis: 38px;
   }
   .brand-name {
-    font-size: 17px;
-    letter-spacing: -0.35px;
+    font-size: 15.5px;
+    letter-spacing: -0.3px;
   }
   .brand-tagline {
-    font-size: 6.7px;
-    letter-spacing: 0.82px;
-    margin-top: 4px;
+    font-size: 6.4px;
+    letter-spacing: 0.75px;
+    margin-top: 3px;
   }
 }
 
 @media (max-width: 430px) {
+  nav {
+    height: 54px;
+  }
+  .mobile-nav {
+    top: 54px;
+  }
+  .brand-mark-wrap {
+    width: 33px;
+    height: 33px;
+    flex-basis: 33px;
+  }
   .brand-name {
-    font-size: 15px;
+    font-size: 13.5px;
   }
   .brand-tagline {
-    font-size: 5.8px;
-    letter-spacing: 0.55px;
+    font-size: 5.6px;
+    letter-spacing: 0.5px;
+    margin-top: 2px;
   }
 }
