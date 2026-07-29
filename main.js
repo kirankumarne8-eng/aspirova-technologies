@@ -750,6 +750,31 @@ function initCertVerifyForm() {
 }
 
 // Initialize on DOM Load
+// ===== FLOATING CHAT WIDGET (WhatsApp greeting card) =====
+function initChatWidget() {
+  const card = document.getElementById('chatGreetingCard');
+  const closeBtn = document.getElementById('chatGreetingClose');
+  const launcherBtn = document.getElementById('chatLauncherBtn');
+  if (!card || !closeBtn || !launcherBtn) return;
+
+  // Show the greeting card by default unless the visitor already closed it
+  // earlier in this browser session.
+  if (sessionStorage.getItem('mkChatGreetingClosed') === 'true') {
+    card.classList.add('is-hidden');
+  }
+
+  closeBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    card.classList.add('is-hidden');
+    sessionStorage.setItem('mkChatGreetingClosed', 'true');
+  });
+
+  launcherBtn.addEventListener('click', () => {
+    const isHidden = card.classList.toggle('is-hidden');
+    sessionStorage.setItem('mkChatGreetingClosed', isHidden ? 'true' : 'false');
+  });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   initRoute();
   initScrollReveal();
@@ -757,6 +782,7 @@ window.addEventListener('DOMContentLoaded', () => {
   checkPortalSession();
   initPortalLoginForm();
   initCertVerifyForm();
+  initChatWidget();
   
   // Bind real HTML form listener
   const contactForm = document.getElementById('contactForm');
