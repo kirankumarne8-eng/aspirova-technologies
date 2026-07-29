@@ -3239,19 +3239,19 @@ footer ul li a:hover {
   width: 54px;
   height: 54px;
   border-radius: 13px;
-  background: #FFFFFF;
-  border: 1.5px solid #E9EDF5;
+  background: transparent;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   flex: 0 0 54px;
-  box-shadow: 0 6px 18px rgba(10, 22, 40, 0.1);
+  box-shadow: none;
   overflow: hidden;
 }
 
 .logo-mark-image {
-  width: 48px;
-  height: 44px;
+  width: 54px;
+  height: 54px;
   object-fit: contain;
   display: block;
 }
@@ -3322,8 +3322,8 @@ footer ul li a:hover {
     border-radius: 9px;
   }
   .logo-mark-image {
-    width: 34px;
-    height: 31px;
+    width: 38px;
+    height: 38px;
   }
   .brand-name {
     font-size: clamp(13.5px, 4.3vw, 15.5px);
@@ -3360,8 +3360,8 @@ footer ul li a:hover {
     flex-basis: 34px;
   }
   .logo-mark-image {
-    width: 30px;
-    height: 28px;
+    width: 34px;
+    height: 34px;
   }
 }
 

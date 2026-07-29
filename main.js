@@ -181,42 +181,92 @@ window.addEventListener('popstate', (e) => {
   isHandlingPopState = false;
 });
 
-// ===== STUDENT PORTAL — TEMPORARILY DISABLED =====
-// SECURITY FIX: This portal previously checked a hardcoded array of student/admin
-// IDs directly in this JavaScript file. That is not real authentication — anyone
-// could open browser dev tools, read the list, and log in (including as admin).
-// The insecure credential list and client-side check have been removed. The portal
-// now always shows the "temporarily unavailable" notice until it is wired up to a
-// real backend such as Firebase Authentication or Supabase Auth, which validates
-// credentials on a server instead of inside the page's source code.
+// ===== STUDENT PORTAL LOGIN =====
+// NOTE ON SECURITY: this is a simple CLIENT-SIDE gate, not real server-side
+// authentication. The credential list below ships inside this file, so anyone
+// who opens browser dev tools / view-source can read it. That's an acceptable
+// trade-off for gating a handful of recorded class videos, but do NOT rely on
+// this to protect anything sensitive (grades, personal data, payments, etc).
+// If that need ever comes up, replace this with real auth — e.g. Firebase
+// Authentication or Supabase Auth — which checks credentials on a server.
+//
+// Edit this list to add/remove students. id and password are case-insensitive
+// on the id, case-sensitive on the password.
+const portalCredentials = [
+  { id: 'ASP-STU-001', password: 'ChangeMe@123', name: 'Student' }
+  // { id: 'ASP-STU-002', password: 'AnotherPass1', name: 'Student Name' },
+];
 
-function validatePortalAccess() {
-  // Disabled on purpose — see note above. No credentials are checked client-side.
-  return;
+function validatePortalAccess(studentId, password) {
+  const idNorm = (studentId || '').trim().toLowerCase();
+  const match = portalCredentials.find(
+    c => c.id.toLowerCase() === idNorm && c.password === password
+  );
+  return match || null;
 }
 
 function checkPortalSession() {
-  // Always ensure any old/legacy session flag is cleared and the locked notice shows.
-  sessionStorage.removeItem('mkPortalAccess');
   const loginCard = document.getElementById('portalLoginCard');
   const unlockedContent = document.getElementById('portalUnlockedContent');
-  const adminContent = document.getElementById('portalAdminContent');
-  if (loginCard) loginCard.style.display = 'block';
-  if (unlockedContent) unlockedContent.style.display = 'none';
-  if (adminContent) adminContent.style.display = 'none';
+  const savedName = sessionStorage.getItem('mkPortalStudentName');
+
+  if (sessionStorage.getItem('mkPortalAccess') === 'true') {
+    if (loginCard) loginCard.style.display = 'none';
+    if (unlockedContent) unlockedContent.style.display = 'block';
+    const welcomeEl = document.getElementById('portalWelcomeName');
+    if (welcomeEl && savedName) welcomeEl.textContent = savedName;
+    renderPortalVideos('all');
+  } else {
+    if (loginCard) loginCard.style.display = 'block';
+    if (unlockedContent) unlockedContent.style.display = 'none';
+  }
 }
 
 function lockPortalSession() {
   sessionStorage.removeItem('mkPortalAccess');
+  sessionStorage.removeItem('mkPortalStudentName');
   const loginCard = document.getElementById('portalLoginCard');
   const unlockedContent = document.getElementById('portalUnlockedContent');
-  const adminContent = document.getElementById('portalAdminContent');
-  const inputEl = document.getElementById('studentIdInput');
-  
-  if (inputEl) inputEl.value = '';
+  const idInput = document.getElementById('studentIdInput');
+  const pwInput = document.getElementById('studentPasswordInput');
+
+  if (idInput) idInput.value = '';
+  if (pwInput) pwInput.value = '';
   if (unlockedContent) unlockedContent.style.display = 'none';
-  if (adminContent) adminContent.style.display = 'none';
   if (loginCard) loginCard.style.display = 'block';
+}
+
+function initPortalLoginForm() {
+  const form = document.getElementById('portalLoginForm');
+  if (!form || form.dataset.bound) return;
+  form.dataset.bound = 'true';
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const idInput = document.getElementById('studentIdInput');
+    const pwInput = document.getElementById('studentPasswordInput');
+    const errorEl = document.getElementById('err-portalLogin');
+
+    const studentId = idInput.value.trim();
+    const password = pwInput.value;
+
+    if (errorEl) { errorEl.textContent = ''; errorEl.classList.remove('visible'); }
+
+    if (!studentId || !password) {
+      if (errorEl) { errorEl.textContent = 'Please enter both your Student ID and password.'; errorEl.classList.add('visible'); }
+      return;
+    }
+
+    const match = validatePortalAccess(studentId, password);
+    if (match) {
+      sessionStorage.setItem('mkPortalAccess', 'true');
+      sessionStorage.setItem('mkPortalStudentName', match.name || match.id);
+      checkPortalSession();
+    } else {
+      if (errorEl) { errorEl.textContent = 'Incorrect Student ID or password. Please try again or contact your coordinator.'; errorEl.classList.add('visible'); }
+      pwInput.value = '';
+    }
+  });
 }
 
 // Dynamic module sorting and rendering
@@ -637,7 +687,9 @@ async function handleFormSubmit(e) {
 //   }
 //
 const issuedCertificates = {
-  // 'ASP-2026-000123': { name: 'Jane Doe', program: 'Java Development Internship', issueDate: '12 Jun 2026' }
+  'ASP-2026-000123': { name: 'Jane Doe', program: 'Java Development Internship', issueDate: '12 Jun 2026' },
+  'ASP-2026-000124': { name: 'Sample Student', program: 'Java Certification Program', issueDate: '20 Jul 2026' }
+  // Add more real records above in the same format, then remove these two samples.
 };
 
 async function verifyCertificateId(certId) {
@@ -703,6 +755,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initQuoteReveal();
   checkPortalSession();
+  initPortalLoginForm();
   initCertVerifyForm();
   
   // Bind real HTML form listener
